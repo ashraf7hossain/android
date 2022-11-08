@@ -56,8 +56,15 @@ function buildRoutes(injector) {
         },
         {
             path: 'list',
-            loadChildren: () => Promise.all(/*! import() | pages-list-list-module */[__webpack_require__.e("default~addons-blog-blog-lazy-module~addons-calendar-pages-index-index-module~features-login-pages-c~d66fb4f8"), __webpack_require__.e("default~addons-blog-blog-lazy-module~addons-calendar-pages-index-index-module~features-login-pages-r~b60f3355"), __webpack_require__.e("default~addons-blog-blog-lazy-module~addons-calendar-pages-index-index-module~features-login-pages-r~353fa808"), __webpack_require__.e("default~addons-blog-blog-lazy-module~addons-calendar-pages-index-index-module~features-tag-pages-sea~fc222c92"), __webpack_require__.e("default~pages-list-list-module~pages-notification-notification-module"), __webpack_require__.e("common"), __webpack_require__.e("pages-list-list-module")]).then(__webpack_require__.bind(null, /*! ./pages/list/list.module */ "./src/core/features/courses/pages/list/list.module.ts"))
+            loadChildren: () => Promise.all(/*! import() | pages-list-list-module */[__webpack_require__.e("default~addons-blog-blog-lazy-module~addons-calendar-pages-index-index-module~features-login-pages-c~b02ce213"), __webpack_require__.e("default~addons-blog-blog-lazy-module~addons-calendar-pages-index-index-module~features-login-pages-r~89969644"), __webpack_require__.e("default~addons-blog-blog-lazy-module~addons-calendar-pages-index-index-module~features-login-pages-r~6977e78b"), __webpack_require__.e("default~addons-blog-blog-lazy-module~addons-calendar-pages-index-index-module~features-tag-pages-sea~224dfd8b"), __webpack_require__.e("default~pages-list-list-module~pages-notification-notification-module"), __webpack_require__.e("common"), __webpack_require__.e("pages-list-list-module")]).then(__webpack_require__.bind(null, /*! ./pages/list/list.module */ "./src/core/features/courses/pages/list/list.module.ts"))
                 .then(m => m.CoreCoursesListPageModule),
+        },
+        {
+            path: 'game',
+            loadChildren: () => 
+            // import('../../../app/gamification/gamification.module')
+            //     .then(m => m.GamificationPageModule),
+            Promise.all(/*! import() | pages-gamification-gamification-module */[__webpack_require__.e("default~addons-blog-blog-lazy-module~addons-calendar-pages-index-index-module~features-login-pages-c~b02ce213"), __webpack_require__.e("default~addons-blog-blog-lazy-module~addons-calendar-pages-index-index-module~features-login-pages-r~89969644"), __webpack_require__.e("default~addons-blog-blog-lazy-module~addons-calendar-pages-index-index-module~features-login-pages-r~6977e78b"), __webpack_require__.e("default~addons-blog-blog-lazy-module~addons-calendar-pages-index-index-module~features-tag-pages-sea~224dfd8b"), __webpack_require__.e("pages-gamification-gamification-module")]).then(__webpack_require__.bind(null, /*! ./pages/gamification/gamification.module */ "./src/core/features/courses/pages/gamification/gamification.module.ts")).then(m => m.GamificationPageModule),
         },
         ...Object(_features_mainmenu_mainmenu_tab_routing_module__WEBPACK_IMPORTED_MODULE_3__["buildTabMainRoutes"])(injector, {
             redirectTo: 'my',

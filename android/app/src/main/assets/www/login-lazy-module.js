@@ -117,7 +117,7 @@ const routes = [
     },
     {
         path: 'site',
-        loadChildren: () => Promise.all(/*! import() | pages-site-site-module */[__webpack_require__.e("default~addons-blog-blog-lazy-module~addons-calendar-pages-index-index-module~features-login-pages-c~d66fb4f8"), __webpack_require__.e("default~addons-blog-blog-lazy-module~addons-calendar-pages-index-index-module~features-login-pages-r~b60f3355"), __webpack_require__.e("pages-site-site-module")]).then(__webpack_require__.bind(null, /*! ./pages/site/site.module */ "./src/core/features/login/pages/site/site.module.ts")).then(m => m.CoreLoginSitePageModule),
+        loadChildren: () => Promise.all(/*! import() | pages-site-site-module */[__webpack_require__.e("default~addons-blog-blog-lazy-module~addons-calendar-pages-index-index-module~features-login-pages-c~b02ce213"), __webpack_require__.e("default~addons-blog-blog-lazy-module~addons-calendar-pages-index-index-module~features-login-pages-r~89969644"), __webpack_require__.e("pages-site-site-module")]).then(__webpack_require__.bind(null, /*! ./pages/site/site.module */ "./src/core/features/login/pages/site/site.module.ts")).then(m => m.CoreLoginSitePageModule),
     },
     {
         path: 'credentials',

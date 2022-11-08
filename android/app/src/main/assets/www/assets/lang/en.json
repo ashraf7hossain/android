@@ -1755,6 +1755,8 @@
     "core.fulllistofcourses": "All courses",
     "core.fullnameandsitename": "{{fullname}} ({{sitename}})",
     "core.fullscreen": "Fullscreen",
+    "core.gamification.sitehome": "Site home",
+    "core.gamification.sitenews": "Site announcements",
     "core.goto": "Go to {{$a}}",
     "core.grades.aggregatemean": "Mean of grades",
     "core.grades.aggregatesum": "Natural",

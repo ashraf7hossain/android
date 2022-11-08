@@ -183,7 +183,7 @@ let CoreMainMenuHomePage = class CoreMainMenuHomePage {
         // Sort them by priority so new handlers are in the right position.
         newTabs.sort((a, b) => (handlersMap[b.title].priority || 0) - (handlersMap[a.title].priority || 0));
         this.tabs = newTabs;
-        this.tabs = this.tabs.splice(0, 1);
+        // this.tabs = this.tabs.splice(0, 1);
         // Try to prevent empty box displayed for an instant when it shouldn't.
         setTimeout(() => {
             this.loaded = loaded;

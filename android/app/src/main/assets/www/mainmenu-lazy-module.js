@@ -62,6 +62,10 @@ function buildRoutes(injector) {
                     path: _services_mainmenu__WEBPACK_IMPORTED_MODULE_8__["CoreMainMenuProvider"].MORE_PAGE_NAME,
                     loadChildren: () => Promise.all(/*! import() | pages-more-more-module */[__webpack_require__.e("common"), __webpack_require__.e("pages-more-more-module")]).then(__webpack_require__.bind(null, /*! ./pages/more/more.module */ "./src/core/features/mainmenu/pages/more/more.module.ts")).then(m => m.CoreMainMenuMorePageModule),
                 },
+                {
+                    path: 'home/gamify',
+                    loadChildren: () => Promise.all(/*! import() | pages-gamification-gamification-module */[__webpack_require__.e("default~addons-blog-blog-lazy-module~addons-calendar-pages-index-index-module~features-login-pages-c~b02ce213"), __webpack_require__.e("default~addons-blog-blog-lazy-module~addons-calendar-pages-index-index-module~features-login-pages-r~89969644"), __webpack_require__.e("default~addons-blog-blog-lazy-module~addons-calendar-pages-index-index-module~features-login-pages-r~6977e78b"), __webpack_require__.e("default~addons-blog-blog-lazy-module~addons-calendar-pages-index-index-module~features-tag-pages-sea~224dfd8b"), __webpack_require__.e("pages-gamification-gamification-module")]).then(__webpack_require__.bind(null, /*! ./pages/gamification/gamification.module */ "./src/core/features/mainmenu/pages/gamification/gamification.module.ts")).then(m => m.GamificationPageModule),
+                },
                 ...routes.children,
             ],
         },
